@@ -6,3 +6,4 @@ git remote add origin https://github.com/jpyrett/sample_repo.git
 git commit -m "first commit"
 git push -u origin master
 Git push
+Git remote add origin https:/github/biniewiczp/sample_repo.gitd
