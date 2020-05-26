@@ -1,0 +1,8 @@
+it init 
+git config --global user.name xxxxxx
+create a READM.md  using  echo "xxxxxxx"  > README.md   (mac)  or on windows:  notepad README.md and save the file
+git add README.md
+git remote add origin https://github.com/jpyrett/sample_repo.git
+git commit -m "first commit"
+git push -u origin master
+Git push

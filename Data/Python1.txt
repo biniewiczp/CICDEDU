@@ -1,0 +1,7 @@
+%python
+import urllib
+urllib.urlretrieve("https://s3-ap-southeast-2.amazonaws.com/variant-spark/datasets/hipsterIndex/hipster.vcf", "/tmp/hipster.vcf")
+urllib.urlretrieve("https://s3-ap-southeast-2.amazonaws.com/variant-spark/datasets/hipsterIndex/hipster_labels.txt", "/tmp/hipster_labels.txt")
+dbutils.fs.mv("file:/tmp/hipster.vcf", "dbfs:/vs-datasets/hipsterIndex/hipster.vcf")
+dbutils.fs.mv("file:/tmp/hipster_labels.txt", "dbfs:/vs-datasets/hipsterIndex/hipster_labels.txt")
+display(dbutils.fs.ls("dbfs:/vs-datasets/hipsterIndex"))
